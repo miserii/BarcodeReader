@@ -19,7 +19,6 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera],
                                                                 mediaType: .video,
                                                                 position: .back)
-        
         // ワイドアングルカメラ・ビデオ・背面カメラに該当するデバイスを取得
         let devices = discoverySession.devices
         
@@ -64,11 +63,12 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
                         view.addSubview(detectionArea)
                         
                         // 閉じるボタン
-                        let closeBtn:UIButton = UIButton()
+                        let closeBtn = UIButton()
                         closeBtn.frame = CGRect(x: 20, y: 20, width: 100, height: 40)
                         closeBtn.setTitle("閉じる", for: UIControl.State.normal)
                         closeBtn.backgroundColor = UIColor.lightGray
                         closeBtn.addTarget(self, action: #selector(closeTaped(sender:)), for: .touchUpInside)
+                        closeBtn.layer.cornerRadius = 5
                         self.view.addSubview(closeBtn)
                         
                         // 読み取り開始
@@ -79,7 +79,7 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
                 print("Error occured while creating video device input: \(error)")
             }
         }
-        
+                
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
@@ -94,6 +94,7 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
             // 取得したデータの処理を行う
             let alert: UIAlertController = UIAlertController(title: "バーコードの中身", message: metadata.stringValue, preferredStyle: UIAlertController.Style.alert)
             let cancel: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:nil)
+            print(metadata.stringValue!)
             alert.addAction(cancel)
             present(alert, animated: true, completion: nil)
         }
