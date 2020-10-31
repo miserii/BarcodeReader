@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-Xh-YQ2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-Xh-YQ2">
                                 <rect key="frame" x="0.0" y="77" width="414" height="819"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" id="wS8-ZD-gbM">
@@ -32,7 +31,7 @@
                                 </prototypes>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-Nf-DaF">
-                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Title" id="yls-EY-fPz"/>
@@ -58,10 +57,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Bt-FT-vRt"/>
+                            <constraint firstAttribute="bottom" secondItem="cgf-Xh-YQ2" secondAttribute="bottom" id="BvF-uD-bCu"/>
+                            <constraint firstItem="cgf-Xh-YQ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ckc-G6-TRp"/>
+                            <constraint firstItem="cgf-Xh-YQ2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KTG-Nw-T7m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXJ-5m-lqG" secondAttribute="trailing" constant="24" id="Wr7-2g-NO4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXJ-5m-lqG" secondAttribute="bottom" constant="96" id="c3U-is-C6n"/>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c8D-wA-0mA"/>
-                            <constraint firstItem="ZLV-Nf-DaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="ttB-86-3TD"/>
+                            <constraint firstItem="cgf-Xh-YQ2" firstAttribute="top" secondItem="ZLV-Nf-DaF" secondAttribute="bottom" id="rd0-9E-jdl"/>
+                            <constraint firstItem="ZLV-Nf-DaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="33" id="ttB-86-3TD"/>
                         </constraints>
                     </view>
                     <connections>
