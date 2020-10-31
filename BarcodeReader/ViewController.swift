@@ -24,6 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         cameraBurron.layer.cornerRadius = cameraBurron.frame.width / 2
+        cameraBurron.layer.shadowColor = UIColor.darkGray.cgColor
+        cameraBurron.layer.shadowOffset = CGSize(width: 0, height: 3)
+        cameraBurron.layer.shadowOpacity = 0.7
+        cameraBurron.layer.shadowRadius = 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
