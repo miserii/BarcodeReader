@@ -39,7 +39,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXJ-5m-lqG">
-                                <rect key="frame" x="302" y="694" width="72" height="72"/>
+                                <rect key="frame" x="318" y="694" width="72" height="72"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="K0x-Xx-m6x"/>
@@ -58,13 +58,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Bt-FT-vRt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXJ-5m-lqG" secondAttribute="trailing" constant="40" id="Wr7-2g-NO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXJ-5m-lqG" secondAttribute="trailing" constant="24" id="Wr7-2g-NO4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXJ-5m-lqG" secondAttribute="bottom" constant="96" id="c3U-is-C6n"/>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c8D-wA-0mA"/>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="ttB-86-3TD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraBurron" destination="YXJ-5m-lqG" id="JLN-lC-WHX"/>
                         <outlet property="tableView" destination="cgf-Xh-YQ2" id="XXh-w2-5kZ"/>
                     </connections>
                 </viewController>
