@@ -13,6 +13,7 @@
 		46B46971254D27C100226E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B4696F254D27C100226E59 /* Main.storyboard */; };
 		46B46973254D27C900226E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B46972254D27C900226E59 /* Assets.xcassets */; };
 		46B46976254D27C900226E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B46974254D27C900226E59 /* LaunchScreen.storyboard */; };
+		46B46980254D2E5C00226E59 /* BarCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4697F254D2E5C00226E59 /* BarCodeReaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		46B46972254D27C900226E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B46975254D27C900226E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46B46977254D27C900226E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B4697F254D2E5C00226E59 /* BarCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeReaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				46B46969254D27C100226E59 /* AppDelegate.swift */,
 				46B4696B254D27C100226E59 /* SceneDelegate.swift */,
 				46B4696D254D27C100226E59 /* ViewController.swift */,
+				46B4697F254D2E5C00226E59 /* BarCodeReaderViewController.swift */,
 				46B4696F254D27C100226E59 /* Main.storyboard */,
 				46B46972254D27C900226E59 /* Assets.xcassets */,
 				46B46974254D27C900226E59 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				46B4696E254D27C100226E59 /* ViewController.swift in Sources */,
 				46B4696A254D27C100226E59 /* AppDelegate.swift in Sources */,
+				46B46980254D2E5C00226E59 /* BarCodeReaderViewController.swift in Sources */,
 				46B4696C254D27C100226E59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +297,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.osakamiseri.BarcodeReader.BarcodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osakamiseri.BarcodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +316,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.osakamiseri.BarcodeReader.BarcodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osakamiseri.BarcodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
