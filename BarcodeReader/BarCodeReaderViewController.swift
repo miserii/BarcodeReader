@@ -88,8 +88,8 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
             if metadata.stringValue == nil { continue }
             
             // 読み取ったデータの値
-            print(metadata.type)
-            print(metadata.stringValue!)
+//            print(metadata.type)
+//            print(metadata.stringValue!)
             
             // 取得したデータの処理を行う
             let alert: UIAlertController = UIAlertController(title: "バーコードの中身", message: metadata.stringValue, preferredStyle: UIAlertController.Style.alert)
