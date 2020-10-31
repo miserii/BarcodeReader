@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var cameraBurron: UIButton!
     
     @IBAction func tapedCamera(_ sender: UIButton) {
         self.present(BarCodeReaderViewController(), animated: true, completion: nil)
@@ -21,6 +22,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        cameraBurron.layer.cornerRadius = cameraBurron.frame.width / 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
