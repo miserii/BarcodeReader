@@ -39,11 +39,11 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXJ-5m-lqG">
-                                <rect key="frame" x="310" y="716" width="56" height="56"/>
+                                <rect key="frame" x="302" y="694" width="72" height="72"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="K0x-Xx-m6x"/>
-                                    <constraint firstAttribute="height" constant="56" id="woG-6w-XOa"/>
+                                    <constraint firstAttribute="width" constant="72" id="K0x-Xx-m6x"/>
+                                    <constraint firstAttribute="height" constant="72" id="woG-6w-XOa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="＋">
@@ -58,8 +58,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Bt-FT-vRt"/>
-                            <constraint firstItem="YXJ-5m-lqG" firstAttribute="top" secondItem="ZLV-Nf-DaF" secondAttribute="bottom" constant="640" id="A1f-UB-ybh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXJ-5m-lqG" secondAttribute="trailing" constant="48" id="Wr7-2g-NO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXJ-5m-lqG" secondAttribute="trailing" constant="40" id="Wr7-2g-NO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXJ-5m-lqG" secondAttribute="bottom" constant="96" id="c3U-is-C6n"/>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c8D-wA-0mA"/>
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="ttB-86-3TD"/>
                         </constraints>
