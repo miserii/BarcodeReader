@@ -79,7 +79,7 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
                 print("Error occured while creating video device input: \(error)")
             }
         }
-                
+                        
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
@@ -95,13 +95,21 @@ class BarCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObje
             let alert: UIAlertController = UIAlertController(title: "バーコードの中身", message: metadata.stringValue, preferredStyle: UIAlertController.Style.alert)
             let cancel: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:nil)
             print(metadata.stringValue!)
+            
+//            UserDefaults.standard.set([metadata.stringValue], forKey: "code")
+//            print("UserDefaultsに入れたバーコードの値")
+//            let barcodeDate = UserDefaults.standard.string(forKey: "code")
+//            print(barcodeDate)
+            
             alert.addAction(cancel)
             present(alert, animated: true, completion: nil)
         }
+        
     }
     
     @objc func closeTaped(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     
 }
