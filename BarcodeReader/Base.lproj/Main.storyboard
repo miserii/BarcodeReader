@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0P-eD-ajF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ホーム-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarcodeReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXJ-5m-lqG">
-                                <rect key="frame" x="318" y="694" width="72" height="72"/>
+                                <rect key="frame" x="318" y="645" width="72" height="72"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="K0x-Xx-m6x"/>
@@ -72,6 +72,7 @@
                             <constraint firstItem="ZLV-Nf-DaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="33" id="ttB-86-3TD"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="folder.fill" catalog="system" selectedImage="folder.fill" id="SdB-zf-aSb"/>
                     <connections>
                         <outlet property="cameraBurron" destination="YXJ-5m-lqG" id="JLN-lC-WHX"/>
                         <outlet property="tableView" destination="cgf-Xh-YQ2" id="XXh-w2-5kZ"/>
@@ -81,8 +82,47 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
+        <!--設定-->
+        <scene sceneID="oMJ-Aj-3ML">
+            <objects>
+                <viewController id="LTe-52-PVR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ga-oJ-UvO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kM2-Ky-mpd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="gearshape" catalog="system" selectedImage="gearshape" id="Nn8-y4-55B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JxG-nJ-r2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="733"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dtL-sS-T0L">
+            <objects>
+                <tabBarController id="I0P-eD-ajF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="86M-gp-0JC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yI0-JL-1tW"/>
+                        <segue destination="LTe-52-PVR" kind="relationship" relationship="viewControllers" id="jIC-0R-fPh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZm-yk-SxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-928" y="374"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
