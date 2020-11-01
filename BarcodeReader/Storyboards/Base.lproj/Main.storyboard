@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="cfg-aA-YyZ">
+                            <tableViewSection headerTitle="バージョン" id="cfg-aA-YyZ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Cou-B2-j08">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -126,7 +126,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="Rba-iI-RvL">
+                            <tableViewSection headerTitle="アプリについて" id="Rba-iI-RvL">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uwb-Gi-vAD">
                                         <rect key="frame" x="0.0" y="127.5" width="414" height="43.5"/>
