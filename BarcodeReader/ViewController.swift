@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ViewDelegate: class {
+    func tappedSendButton(text: String)
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,8 +20,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.present(BarCodeReaderViewController(), animated: true, completion: nil)
     }
     
+    class Item {
+        var barcode: String
+        
+        init(barcode: String) {
+            self.barcode = barcode
+        }
+    }
+    
+    var barcodeList: [Item] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // アイテム追加処理
+        barcodeList.insert(Item(barcode: "(例) バーコード1"), at: 0)
+        barcodeList.insert(Item(barcode: "(例) バーコード2"), at: 1)
+        barcodeList.insert(Item(barcode: "(例) バーコード3"), at: 2)
         
         tableView.tableFooterView = UIView()
         tableView.delegate = self
@@ -31,17 +50,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return barcodeList.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 56
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellId", for: indexPath)
-        cell.backgroundColor = UIColor.lightGray
+        let code = barcodeList[indexPath.row]
+        cell.textLabel?.text = code.barcode
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        // アイテム削除処理
+        barcodeList.remove(at: indexPath.row)
+        let indexPaths = [indexPath]
+        tableView.deleteRows(at: indexPaths, with: .automatic)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
