@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464590C52555013900F85FEB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464590C42555013900F85FEB /* TabBarController.swift */; };
+		464590C82555015900F85FEB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464590C72555015900F85FEB /* TabBar.storyboard */; };
 		46B4696A254D27C100226E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B46969254D27C100226E59 /* AppDelegate.swift */; };
 		46B4696C254D27C100226E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4696B254D27C100226E59 /* SceneDelegate.swift */; };
 		46B4696E254D27C100226E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4696D254D27C100226E59 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		464590C42555013900F85FEB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		464590C72555015900F85FEB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		46B46966254D27C100226E59 /* BarcodeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B46969254D27C100226E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B4696B254D27C100226E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				46B4696D254D27C100226E59 /* ViewController.swift */,
 				46B4697F254D2E5C00226E59 /* BarCodeReaderViewController.swift */,
 				46B46985254F01D500226E59 /* SettingsTableViewController.swift */,
+				464590C42555013900F85FEB /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			children = (
 				46B4696F254D27C100226E59 /* Main.storyboard */,
 				46B4698E254F02B300226E59 /* Setting.storyboard */,
+				464590C72555015900F85FEB /* TabBar.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464590C82555015900F85FEB /* TabBar.storyboard in Resources */,
 				46B46976254D27C900226E59 /* LaunchScreen.storyboard in Resources */,
 				46B46973254D27C900226E59 /* Assets.xcassets in Resources */,
 				46B46971254D27C100226E59 /* Main.storyboard in Resources */,
@@ -174,6 +181,7 @@
 				46B4696E254D27C100226E59 /* ViewController.swift in Sources */,
 				46B46986254F01D500226E59 /* SettingsTableViewController.swift in Sources */,
 				46B4696A254D27C100226E59 /* AppDelegate.swift in Sources */,
+				464590C52555013900F85FEB /* TabBarController.swift in Sources */,
 				46B46980254D2E5C00226E59 /* BarCodeReaderViewController.swift in Sources */,
 				46B4696C254D27C100226E59 /* SceneDelegate.swift in Sources */,
 			);
